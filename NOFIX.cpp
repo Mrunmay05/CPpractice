@@ -9,19 +9,18 @@ int main(){
         int n;
         cin>>n;
         int *a=new int[n];
-        int count=0;
         for(int i=0;i<n;i++)
         {
             cin>>a[i];
         }
+        int k=0;
         for(int i=0;i<n;i++)
         {
-            if(a[i]==i+1)
-            {
-                count++;
-            }
+          int v=1+i+k;
+          if(v==a[i])
+          k++;
         }
-        cout<<count<<endl;
+        cout<<k<<endl;
     }
     return 0;
 }
