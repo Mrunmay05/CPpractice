@@ -1,27 +1,28 @@
-#include <iostream>
-using namespace std;
+#include <bits/stdc++.h>
+// using namespace std;
 
-int main(){
-    int t;
-    cin>>t;
-    while(t--)
-    {
-        int n;
-        cin>>n;
-        int *a=new int[n];
-        int count=0;
-        for(int i=0;i<n;i++)
-        {
-            cin>>a[i];
-        }
-        for(int i=0;i<n;i++)
-        {
-            if(a[i]==i+1)
-            {
-                count++;
-            }
-        }
-        cout<<count<<endl;
-    }
-    return 0;
-}
+// void printvec(vector<int> v)
+// {
+//     cout<<"size: "<<v.size()<<endl;//v.size()->O(1)
+//     for (int i=0;i<v.size();i++)
+//     {
+//         cout<<v[i]<<" ";
+//     }
+    
+// }
+
+// int main(){
+//     int a[10];
+//     vector<int> v;
+//     int n;
+//     cin>>n;
+//     for(int i=0;i<n;i++)
+//     {
+//         int x;
+//         cin>>x;
+//         printvec(v);
+//         v.push_back(x);//O(1) complexity
+//     }
+//     printvec(v);
+//     return 0;
+// }
